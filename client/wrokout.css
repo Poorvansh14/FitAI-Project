@@ -1,0 +1,72 @@
+body {
+  background-color: #0f0f0f;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.workout-container {
+  max-width: 700px;
+  margin: 100px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.workout-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #00ffd5;
+}
+
+.workout-container p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #1c1c1c;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  box-shadow: 0 0 10px #00ffd5;
+}
+
+.get-plan-btn {
+  background: #00ffd5;
+  color: #0f0f0f;
+  font-weight: bold;
+  padding: 12px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.get-plan-btn:hover {
+  background: #0fffc7;
+  box-shadow: 0 0 10px #00ffd5, 0 0 20px #00ffd5;
+}
+
+.result-area {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #ccc;
+}

@@ -1,0 +1,89 @@
+/* Use your existing style.css for global styles and fonts */
+
+/* Main dark/light theme colors and variables come from style.css */
+
+/* -- Diet page form styles: copy from workout form with zero layout changes --*/
+
+.workout-form {
+  background: var(--feature-bg);
+  border-radius: 22px;
+  padding: 2.7em 2em;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  margin-top: 1vw;
+  max-width: 470px;
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(var(--card-blur));
+}
+
+.workout-form label {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.workout-form input,
+.workout-form select,
+.workout-form button {
+  padding: 1em 1.1em;
+  border-radius: 9px;
+  border: 1.5px solid #c6f4ea35;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(240, 255, 254, 0.74);
+  color: var(--text);
+  transition: box-shadow 0.23s, border-color 0.18s, background 0.23s, color 0.23s;
+  width: 100%;
+}
+
+.workout-form input:focus,
+.workout-form select:focus {
+  border-color: #6e7fff;
+  box-shadow: 0 2px 14px #00ffc251;
+  background: #fff;
+}
+
+[data-theme="dark"] .workout-form input,
+[data-theme="dark"] .workout-form select {
+  background: #25273a;
+  color: #f5f7fa;
+  border-color: #445 !important;
+}
+
+.workout-form button {
+  background: var(--gradient);
+  color: #fff;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 1.17rem;
+  border: none;
+  box-shadow: 0 1.5px 16px rgba(0, 255, 194, 0.10);
+  margin-top: 0.7em;
+  cursor: pointer;
+  transition: transform 0.14s, box-shadow 0.15s;
+  width: 100%;
+}
+
+.workout-form button:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 4px 32px rgba(14, 255, 190, 0.17);
+}
+
+@media (max-width: 900px) {
+  .main-hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 2vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-hero-content h1 {
+    font-size: 2rem;
+  }
+  .workout-form {
+    padding: 1.2em 0.9em;
+  }
+}
